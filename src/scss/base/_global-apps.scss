@@ -1,0 +1,152 @@
+@use "./variables" as *;
+@use "./mixins";
+
+@font-face {
+  font-family: "Suisse Int'l";
+  src: url("./assets/fonts/SuisseIntl-Regular-WebS.woff2") format("woff2"),
+    url("./assets/fonts/SuisseIntl-Regular-WebS.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Sofia Pro";
+  src: url("./assets/fonts/SofiaPro-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  color: $main-text-color;
+  background-color: $main-bg-color;
+  font-family: $main-text-font, sans-serif;
+  font-weight: 400;
+}
+
+.container {
+  width: 100vw;
+  margin: 0 auto;
+  max-width: 427px;
+  padding: 0 20px;
+  //   width: 100%;
+  @include mixins.respond(mobile) {
+    min-width: 428px;
+  }
+
+  @include mixins.respond(tablet) {
+    min-width: 768px;
+    // padding: 0 32px;
+  }
+
+  @include mixins.respond(laptop) {
+    min-width: 1024px;
+    // padding: 0 16px;
+  }
+
+  @include mixins.respond(desktop) {
+    min-width: 1464px;
+    // padding: 0 20px;
+  }
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.center_alignment {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.main_title-26 {
+  font-family: $title-color;
+  font-size: 26px;
+  line-height: 35px;
+  color: $title-color;
+  text-align: center;
+}
+
+.text-pro-15 {
+  font-size: 15px;
+  line-height: 23px;
+  letter-spacing: 0.03em;
+  text-align: left;
+}
+
+.text-pro-13 {
+  font-size: 13px;
+  line-height: 18px;
+  letter-spacing: 0.03em;
+  text-align: left;
+}
+
+.text-12 {
+  font-family: $secondary-text-font;
+  font-size: 12px;
+  line-height: 23px;
+  letter-spacing: 0.04em;
+  text-align: left;
+}
+
+.btn-primary {
+  font-family: $secondary-text-font;
+  font-size: 18px;
+  letter-spacing: 0.03em;
+  background-color: $title-color;
+  color: $main-bg-color;
+  padding: 16.5px 75px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+
+  &:hover {
+    opacity: 0.8;
+  }
+}
+
+.mr-8 {
+  margin-right: 8px;
+}
+
+.mr-14 {
+  margin-right: 14px;
+}
+
+.mb-86 {
+  margin-bottom: 86px;
+}
+
+.fs-11 {
+  font-size: 11px;
+}
+
+.text-review {
+  font-family: $secondary-text-font;
+  color: #828282;
+  line-height: 20px;
+  letter-spacing: 0.02em;
+  text-align: left;
+}
+
+.rew_stars {
+  display: flex;
+}
+
+.reviews_lis {
+  display: flex;
+  align-items: center;
+}

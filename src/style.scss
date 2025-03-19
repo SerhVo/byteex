@@ -1,10 +1,7 @@
-body {
-  background-color: #ad5ff0;
-  color: white;
-  font-family: Arial, sans-serif;
+@use "./scss/base/variables";
+@use "./scss/base/mixins";
+@use "./scss/base/base-drop.scss";
+@use "./scss/base/global-apps.scss";
 
-}
-img {
-    width: 50vw;
-    height: auto;
-}
+@use "./scss/partials/header";
+@use "./scss/partials/hero";
