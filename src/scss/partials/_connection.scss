@@ -1,0 +1,7 @@
+@use "../base/variables" as *;
+
+.connection {
+  background-color: $secondary-bg-color;
+  padding: 40px 0 50px;
+  text-align: left;
+}
