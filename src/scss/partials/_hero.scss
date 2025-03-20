@@ -2,6 +2,7 @@
 .hero {
   background-color: $main-bg-color;
   position: relative;
+  margin-bottom: 100px;
 }
 
 .hero_img-box {
@@ -33,6 +34,9 @@
   align-items: center;
   margin-bottom: 26px;
 }
+.rew_stars-icon {
+  height: 10px;
+}
 
 .hero_item-icon {
   margin-right: 13px;
@@ -43,7 +47,7 @@
 .reviews {
   position: absolute;
   width: 90vw;
-  bottom: -80px;
+  bottom: -28%;
   left: 20px;
   padding: 13px;
   background-color: $main-bg-color;

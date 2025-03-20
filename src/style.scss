@@ -5,3 +5,9 @@
 
 @use "./scss/partials/header";
 @use "./scss/partials/hero";
+@use "./scss/partials/benefits";
+
+
+@use "swiper/css";
+@use "swiper/css/navigation";
+@use "swiper/css/pagination";
